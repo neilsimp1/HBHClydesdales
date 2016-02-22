@@ -1,0 +1,22 @@
+# Site settings
+title: "HBH Clydesdales"
+email: neilsimp1@gmail.com
+description: "HBH Clydesdales"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+permalink: /blog/:title
+title_base: "HBH Clydesdales:"
+exclude: [tools, node_modules, sass, HBHClysdale.sln, package.json]
+include: [fonts]
+
+collections:
+  docs:
+    output: true
+  press:
+    output: true
+  blog:
+    output: true

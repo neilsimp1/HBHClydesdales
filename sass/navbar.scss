@@ -1,0 +1,28 @@
+﻿@import 'colors';
+
+.navbar {
+	background-color: $brown;
+	margin: 0;
+}
+
+.navbar .navbar-toggle,
+.navbar a, .navbar a:active, .navbar a:focus, .navbar a:visited {
+	color: $grey;
+}
+.navbar a:hover {
+	color: $black;
+	background-color: $grey;
+}
+.navbar-toggle .icon-bar {
+	background-color: $grey;
+}
+
+a.navbar-brand {
+	&:hover {
+		background-color: initial;
+		color: $white;
+	}
+	font-family: Berylium, sans-serif;
+    font-size: 1.8em;
+	padding:17px 15px;
+}
