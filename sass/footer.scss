@@ -1,11 +1,13 @@
 @import 'colors';
 
+
 footer {
 	background-color: $brown;
 }
 
 footer img {
-	margin: 5px 0;
+	margin: 10px 0;
+    max-height: 40px;
 }
 
 .footer-info {

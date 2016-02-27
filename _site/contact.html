@@ -2,12 +2,12 @@
 <html>
 	
 	<head>
-	<title>HBH Clydesdales: Documentation</title>
+	<title>HBH Clydesdales</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width" />
 	<meta name="description" content="HBH Clydesdales" />
-	<link rel="canonical" href="/docs/index" />
+	<link rel="canonical" href="/contact" />
 	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="/css/bootstrap.css" />
 	<link rel="stylesheet" href="/css/hbh.css" />
@@ -39,37 +39,60 @@
 
 		<div class="wrapper">
 
-			<div id="documentation-header">
-    <div class="container"><h1>Documentation</h1></div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-2">
-            <ul class="documentation-nav">
-                <li>
-                    <ul class="nav nav-stacked">
-                        <li><a href="/docs">Home</a></li>
-                    </ul>
-                </li>
-                <li class="item heading">Integration</li>
-                <li>
-                    <ul class="nav nav-stacked">
-                        <li><a href="/docs/api">API (REST)</a></li>
-                        <li><a href="/docs/net">.NET</a></li>
-                        <li><a href="/docs/js">JavaScript</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-10">
-            <p>Take a look around our documentation by selecting a topic from the menu on the left.</p>
+			<div class="container">
 
-<p>##Integration</p>
+	<section>
 
-<p>Slipspace provides first class support for <a href="/docs/net">.NET</a> and <a href="/docs/js">JavaScript</a>. Other languages are coming soon but in the meantime you can integrate with our <a href="/docs/api">REST API</a> directly.</p>
+		<h1>Contact Us</h1>
 
-        </div>
-    </div>
+		<form novalidate>
+
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<label for="name" class="control-label">Name</label><br />
+					<input type="text" id="name" name="name" class="form-control" required />
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 form-group">
+					<label for="email" class="control-label">Email</label><br />
+					<input type="email" id="email" name="email" class="form-control" required />
+				</div>
+				<div class="col-xs-12 col-sm-6 form-group">
+					<label for="phone" class="control-label">Phone</label><br />
+					<input type="text" id="phone" name="phone" class="form-control" />
+				</div>
+			</div>
+
+			<div class="hr hr-90"></div>
+
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<label for="subject" class="control-label">Subject</label><br />
+					<input type="text" id="subject" name="subject" class="form-control" required />
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<label for="message" class="control-label">Message</label><br />
+					<textarea id="message" name="message" class="form-control textarea"></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="btn-group pull-right">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</div>
+
+		</form>
+
+	</section>
+
 </div>
 
 		</div>

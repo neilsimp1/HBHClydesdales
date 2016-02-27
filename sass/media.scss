@@ -1,0 +1,21 @@
+﻿@media(max-width:400px){
+	body > .container {
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+}
+
+@media(max-width:450px){
+	.google-map{
+		max-height: 300px;
+	}
+	section {
+		padding: 1% 0;
+	}
+}
+
+@media(max-width: 600px) {
+	.carousel-inner>.item {
+		background-size: cover;
+	}
+}

@@ -1,11 +1,17 @@
 ﻿@import 'colors';
 
-.carousel-inner, .carousel-inner>.item{
-	height: 50vh;
+
+.carousel {
+	border-bottom: 2px solid $brown;
 }
-.carousel-inner>.item{
-	background-color: #000;
-	background-size: contain;
+
+.carousel-inner, .carousel-inner>.item {
+	height: 50vh;
+	background-color: $trans-dgrey;
+}
+.carousel-inner>.item {
+	background-color: transparent;
+	background-size: 80%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
