@@ -26,6 +26,8 @@ contact-phone2: "(518) 424-7089"
 
 		<form novalidate>
 
+			<h2>Send us a Message</h2>
+
 			<div class="row">
 				<div class="col-xs-12 form-group">
 					<label for="name" class="control-label">Name</label><br />
@@ -63,7 +65,7 @@ contact-phone2: "(518) 424-7089"
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="btn-group pull-right">
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-primary" onclick="alert('This will send an email to {{ page.contact-email }}');return false;">Submit</button>
 					</div>
 				</div>
 			</div>
