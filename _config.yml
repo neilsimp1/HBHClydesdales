@@ -10,7 +10,7 @@ permalink: pretty
 highlighter: rouge
 permalink: /blog/:title
 title_base: "HBH Clydesdales:"
-exclude: [tools, node_modules, sass, HBHClysdale.sln, package.json]
+exclude: [tools, node_modules, psd, sass, src, HBHClysdale.sln, package.json]
 include: [fonts]
 
 collections:

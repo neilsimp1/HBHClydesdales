@@ -1,5 +1,8 @@
 ---
 layout: default
+contact-email: "hbhclydesdales@aol.com"
+contact-phone1: "(518) 429-8365"
+contact-phone2: "(518) 424-7089"
 ---
 
 <div class="container">
@@ -7,6 +10,19 @@ layout: default
 	<section>
 
 		<h1>Contact Us</h1>
+
+		<p>
+			<h3>Heather Brooke Hill</h3>
+			137 Prairie Rd<br />
+			Carlisle, NY 12160
+		</p>
+
+		<p>
+			Email: <a href="mailto:{{ page.contact-email }}">{{ page.contact-email }}</a><br />
+			Phone: <a href="tel:{{ page.contact-phone1 }}" class="hint--left" data-hint="John">{{ page.contact-phone1 }}</a> or <a href="tel:{{ page.contact-phone2 }}" class="hint--right" data-hint="Stephanie">{{ page.contact-phone2 }}</a>
+		</p>
+
+		<div class="hr hr-90"></div>
 
 		<form novalidate>
 
@@ -28,7 +44,7 @@ layout: default
 				</div>
 			</div>
 
-			<div class="hr hr-90"></div>
+			<div class="hr hr-70"></div>
 
 			<div class="row">
 				<div class="col-xs-12 form-group">
