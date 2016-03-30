@@ -36,6 +36,13 @@ section {
 
 .form-group {text-align: left;}
 
+a.active {
+    color: $black;
+    &:hover {
+        text-decoration: none;
+        cursor: default !important;
+    }
+}
 
 .google-map{
 	width: 100%;

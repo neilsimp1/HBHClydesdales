@@ -20,3 +20,9 @@
 		background-size: cover;
 	}
 }
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 980px;
+    }
+}

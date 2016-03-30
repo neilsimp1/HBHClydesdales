@@ -3,19 +3,31 @@ layout: default
 ---
 
 <div class="container">
-
+    
 	<section>
-
+        
 		<h1>Photos</h1>
-
+        
 		<div class="row">
-			<div class="fb-albums container-fluid">
-
-				<iframe src="//embedsocial.com/facebook_album/album_photos/1598011883810456" id="iframe_es" width="900" height="1450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-
+			<div class="container-fluid">
+                
+                <ul class="fb-albums-list list-inline text-center"></ul>
+                
+                <ul class="fb-albums"></ul>
+                
 			</div>
 		</div>
-
+        
 	</section>
-
+    
 </div>
+
+<div id="modal_pic" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div id="modal_pic_body" class="modal-body"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/scripts/photos.js" defer="defer"></script>
