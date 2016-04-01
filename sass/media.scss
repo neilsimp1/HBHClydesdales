@@ -13,6 +13,13 @@
 	section {
 		padding: 1% 0;
 	}
+    .footer-info {
+        text-align: center;
+        float: none !important;
+    }
+    [data-hint]:after {
+        white-space: normal;
+    }
 }
 
 @media(max-width: 600px) {
