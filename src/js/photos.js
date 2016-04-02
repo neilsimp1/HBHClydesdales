@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    let url = 'http://fbalbums.us-east-1.elasticbeanstalk.com/1597977573813887/albums';
+    let url = 'http://fb-albums.azurewebsites.net/1597977573813887/albums';
     
     $.getJSON(url, function(albums){
         albums.forEach(function(album){
