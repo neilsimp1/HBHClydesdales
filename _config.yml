@@ -1,15 +1,15 @@
 # Site settings
 title: "HBH Clydesdales"
 email: neilsimp1@gmail.com
-description: "HBH Clydesdales"
-baseurl: ""
+description: "Are You Planning A Special Event? Need a Horse and Carriage for a Wedding? Are you looking for Rustic Country Charm? The possibilities are endless!"
+baseurl: "http://hbhclydesdales.com"
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
-title_base: "HBH Clydesdales:"
-exclude: [tools, node_modules, psd, sass, src, HBHClysdale.sln, package.json]
+title_base: "HBH Clydesdales -"
+exclude: [tools, node_modules, psd, sass, src, HBHClydesdales.sln, package.json]
 include: [fonts]
 
 collections:
