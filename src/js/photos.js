@@ -2,6 +2,9 @@ $(document).ready(function(){
     let url = 'http://fb-albums.azurewebsites.net/1597977573813887/albums';
     
     $.getJSON(url, function(albums){
+
+		if(albums.length) $('.fb-albums').html('');
+
         albums.forEach(function(album){
             $('.fb-albums-list').append($('<li><a class="album pointer">' + album.name + '</a></li>'));
             
