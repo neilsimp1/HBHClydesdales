@@ -2,7 +2,8 @@
 title: "HBH Clydesdales"
 email: neilsimp1@gmail.com
 description: "Are You Planning A Special Event? Need a Horse and Carriage for a Wedding? Are you looking for Rustic Country Charm? The possibilities are endless!"
-baseurl: "http://hbhclydesdales.com"
+baseurl: ""
+produrl: "http://hbhclydesdales.com"
 
 # Build settings
 markdown: kramdown

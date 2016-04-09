@@ -27,45 +27,51 @@ contact-phone2: "(518) 424-7089"
 		<form novalidate>
 
 			<h2>Send us a Message</h2>
-
-			<div class="row">
-				<div class="col-xs-12 form-group">
+            
+            <div class="row">
+				<div class="col-xs-12 form-group" data-form-group="name">
 					<label for="name" class="control-label">Name</label><br />
 					<input type="text" id="name" name="name" class="form-control" required />
 				</div>
 			</div>
-
+            
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 form-group">
+				<div class="col-xs-12 col-sm-6 form-group" data-form-group="email">
 					<label for="email" class="control-label">Email</label><br />
 					<input type="email" id="email" name="email" class="form-control" required />
 				</div>
-				<div class="col-xs-12 col-sm-6 form-group">
+				<div class="col-xs-12 col-sm-6 form-group" data-form-group="phone">
 					<label for="phone" class="control-label">Phone</label><br />
 					<input type="text" id="phone" name="phone" class="form-control" />
 				</div>
 			</div>
-
+            
 			<div class="hr hr-70"></div>
-
+            
 			<div class="row">
-				<div class="col-xs-12 form-group">
+				<div class="col-xs-12 form-group" data-form-group="subject">
 					<label for="subject" class="control-label">Subject</label><br />
 					<input type="text" id="subject" name="subject" class="form-control" required />
 				</div>
 			</div>
-
+            
 			<div class="row">
-				<div class="col-xs-12 form-group">
+				<div class="col-xs-12 form-group" data-form-group="message">
 					<label for="message" class="control-label">Message</label><br />
 					<textarea id="message" name="message" class="form-control textarea"></textarea>
 				</div>
 			</div>
-
+            
+            <div class="row message-success">
+				<div class="col-xs-12">
+					<p class="text-center">Email successfully sent!</p>
+				</div>
+			</div>
+            
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="btn-group pull-right">
-						<button type="submit" class="btn btn-primary" onclick="alert('This will send an email to {{ page.contact-email }}');return false;">Submit</button>
+						<button type="submit" class="btn btn-primary">Submit</button>
 					</div>
 				</div>
 			</div>
@@ -75,3 +81,5 @@ contact-phone2: "(518) 424-7089"
 	</section>
 
 </div>
+
+<script src="/scripts/contact.js" defer="defer"></script>
