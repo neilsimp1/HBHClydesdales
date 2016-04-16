@@ -48,3 +48,4 @@ Temporary Items
 /.vs
 /node_modules
 /_site
+.jekyll-metadata
