@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "description": "HBH Clydesdales",
   "main": "",
-  "scripts": {
-    "bootstrap-css": "node-sass --output-style compressed -o css node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
-    "bootstrap-fonts": "copyfiles -f node_modules/bootstrap-sass/assets/fonts/bootstrap/*.* fonts/bootstrap",
-    "bootstrap": "npm run bootstrap-css && npm run bootstrap-fonts",
-    "hint.css": "node-sass --output-style compressed -o css node_modules/hint.css/src/hint.scss",
-    "sass": "node-sass --output-style compressed -o css sass/hbh.scss",
-    "babel": "babel src/js --out-dir scripts --presets es2015"
-  },
+	"scripts": {
+		"bootstrap-css": "node-sass --output-style compressed -o css node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+		"bootstrap-fonts": "copyfiles -f node_modules/bootstrap-sass/assets/fonts/bootstrap/*.* fonts/bootstrap",
+		"bootstrap": "npm run bootstrap-css && npm run bootstrap-fonts",
+		"hint.css": "node-sass --output-style compressed -o css node_modules/hint.css/src/hint.scss",
+		"sass": "node-sass --output-style compressed -o css sass/hbh.scss",
+		"uglify:contact": "uglifyjs scripts/contact.js --output scripts/contact.js",
+		"uglify:photos": "uglifyjs scripts/photos.js --output scripts/photos.js",
+		"uglify": "npm run uglify:contact && npm run uglify:photos",
+		"babel": "babel src/js --out-dir scripts --presets es2015",
+		"build:js": "npm run babel && npm run uglify"
+	},
   "author": "Neil Simpson",
   "license": "",
   "devDependencies": {
