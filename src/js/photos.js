@@ -3,9 +3,7 @@ $(document).ready(function(){
     
     $.getJSON(url, function(albums){
 
-		if(albums.length) $('.fb-albums').html('');
-
-        albums.forEach(function(album){
+		albums.forEach(function(album, index){
             $('.fb-albums-list').append($('<li><a class="album pointer">' + album.name + '</a></li>'));
             
             let $li = $('<li>')
@@ -17,6 +15,8 @@ $(document).ready(function(){
                     + photo.src + '" data-hint="' + (photo.name !== 'undefined'? photo.name: '') + '"><img src="'
                     + photo.thumb + '" class="img-responsive"></a></div>');
             });
+
+			if(index === 0){if(albums.length) $('.fb-albums').html('');}
             
             $container.append($row);
             $li.append($container);
