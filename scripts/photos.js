@@ -17,7 +17,7 @@ $(document).ready(function () {
             });
 
             if (index === 0) {
-                if (albums.length) $('.fb-albums').html('');
+                if (albums.length) $('#loading').slideUp();
             }
 
             $container.append($row);
@@ -26,7 +26,8 @@ $(document).ready(function () {
 
             //open first album
             $('.fb-albums-list li a')[0].classList.add('active');
-            $('.fb-albums li:first-of-type')[0].style.display = 'list-item';
+            //$('.fb-albums li:first-of-type')[0].style.display = 'list-item';
+            $('.fb-albums li:first-of-type').slideDown();
         });
     });
 
