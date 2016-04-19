@@ -16,16 +16,24 @@ $(document).ready(function(){
                     + photo.thumb + '" class="img-responsive"></a></div>');
             });
 
-			if(index === 0){if(albums.length) $('#loading').slideUp();}
+			if(index === 0){if(albums.length) $('#loading').remove();}
             
             $container.append($row);
             $li.append($container);
             $('.fb-albums').append($li);
-            
-            //open first album
-            $('.fb-albums-list li a')[0].classList.add('active');
-            $('.fb-albums li:first-of-type').slideDown();
         });
+
+		//open first album
+        document.querySelector('.fb-albums-list li a').classList.add('active');
+		let firstAlbum = document.querySelector('.fb-albums li');
+		firstAlbum.style.display = 'list-item';
+		let count = 0, firstAlbumCount = $(firstAlbum).find('img').length;
+		$(firstAlbum).find('img').each(function(){
+			this.onload = function(){
+				count++;
+				if(count === firstAlbumCount) fixHeight();
+			}
+		});
     });
     
     
@@ -39,11 +47,7 @@ $(document).ready(function(){
         $('.fb-albums li').css('display', 'none');
         $('.fb-albums').children().eq($(this).parent().index()).css('display', 'list-item');
         
-        let height = 0;
-        $('a.thumbnail:visible').each(function(){
-            if(this.clientHeight > height) height = this.clientHeight;
-        });
-        $('a.thumbnail:visible').css('height', height);
+        fixHeight();
     });
     
     //show modal
@@ -52,4 +56,14 @@ $(document).ready(function(){
         $('#modal_pic_body').html('').append(img);
         $('#modal_pic').modal('show');
     });
+
+	function fixHeight(){
+		let height = 0;
+		let $pics = $('a.thumbnail:visible');
+        $pics.each(function(){
+            if(this.clientHeight > height) height = this.clientHeight;
+        });
+		$pics.css('height', height);
+	}
+
 });
