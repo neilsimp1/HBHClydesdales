@@ -17,15 +17,15 @@
         text-align: center;
         float: none !important;
     }
-    [data-hint]:after {
-        white-space: normal;
-    }
 }
 
 @media(max-width: 600px) {
 	.carousel-inner>.item {
 		background-size: cover;
 	}
+	[data-hint]:after {
+        white-space: normal;
+    }
 }
 
 @media (min-width: 992px) {
