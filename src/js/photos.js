@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    let url = 'http://fb-albums.azurewebsites.net/1597977573813887/albums';
+    const url = 'http://fb-albums.azurewebsites.net/1597977573813887/albums?ids=1662787403999570,1597981170480194,1597981107146867';
     
     $.getJSON(url, function(albums){
 
