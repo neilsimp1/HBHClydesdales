@@ -10,13 +10,5 @@ markdown: kramdown
 permalink: pretty
 highlighter: rouge
 title_base: "HBH Clydesdales -"
-exclude: [tools, node_modules, psd, sass, src, HBHClydesdales.sln, package.json]
+exclude: [tools, node_modules, docs, sass, src, HBHClydesdales.sln, package.json]
 include: [fonts]
-
-collections:
-  docs:
-    output: true
-  press:
-    output: true
-  blog:
-    output: true
