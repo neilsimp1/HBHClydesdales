@@ -1,0 +1,13 @@
+@import 'colors';
+
+
+ul.save-the-dates {
+	list-style-type: none;
+	li[role]:before {
+		content: " ";
+		white-space: pre;
+	}
+	li:not([role="separator"]):before {
+		content: "\2600";
+	}
+}
